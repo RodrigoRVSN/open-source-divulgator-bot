@@ -25,7 +25,7 @@ def get_mentions(api):
     return mentions
 
 def retweet(api):
-    mentions = get_mentions()
+    mentions = get_mentions(api)
     for mention in mentions:
         try:
             api.retweet(mention.id)
