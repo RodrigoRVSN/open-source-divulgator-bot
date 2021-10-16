@@ -2,12 +2,50 @@ import tweepy
 import schedule
 import time
 import os
+import sqlite3
+from sqlite3 import Error
+
 
 consumer_key = os.getenv('CONSUMER_KEY')
 consumer_secret = os.getenv('CONSUMER_SECRET')
 acess_token = os.getenv('ACCESS_TOKEN')
 acess_token_secret = os.getenv('ACCESS_TOKEN_SECRET')
 ret_mentions = []
+
+def insert_id(conn, id):
+    sql = ''' INSERT INTO projects(id)
+              VALUES(?) '''
+    cur = conn.cursor()
+    cur.execute(sql, id)
+    conn.commit()
+    return cur.lastrowid    
+
+
+def create_connection(db_file):
+    conn = None
+    try:
+        conn = sqlite3.connect(db_file)
+        return conn
+    except Error as e:
+        print(e)
+
+    return conn
+
+
+def create_table(conn, create_table_sql):
+    try:
+        c = conn.cursor()
+        c.execute(create_table_sql)
+    except Error as e:
+        print(e)
+
+
+def database():
+    database = r"C:\Users\Lorenzo\Desktop\twitter-bot\open-source-divulgator-bot\tweets.db"
+    conn = create_connection(database)
+    with conn:
+        insert_id(conn, 1)
+
 
 
 def main():
@@ -82,4 +120,5 @@ class Retweets:
 
 
 if __name__ == '__main__':
+    
     main()
