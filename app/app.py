@@ -16,7 +16,7 @@ def main():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(acess_token, acess_token_secret)
     api = tweepy.API(auth)
-    schedule.every(30).minutes.do(retweet, api)
+    schedule.every(10).minutes.do(retweet, api)
 
     while True:
         schedule.run_pending()
@@ -51,10 +51,10 @@ def add_retweet(mention):
     ret_mentions = get_retweeted_mentions()
     row = pd.Series(mention, index=['id'])
     ret_mentions = ret_mentions.append(row, ignore_index=True)
-    ret_mentions.to_csv('open-source-divulgator-bot/retweeted_mentions/ret_mentions.csv', index=False)
+    ret_mentions.to_csv('C:/Users/Lorenzo/Desktop/twitter-bot/open-source-divulgator-bot/app/ret_mentions.csv', index=False)
 
 def get_retweeted_mentions():
-    ret_mentions = pd.read_csv('open-source-divulgator-bot/retweeted_mentions/ret_mentions.csv')
+    ret_mentions = pd.read_csv('C:/Users/Lorenzo/Desktop/twitter-bot/open-source-divulgator-bot/app/ret_mentions.csv')
     return ret_mentions
 
 if __name__ == '__main__':
