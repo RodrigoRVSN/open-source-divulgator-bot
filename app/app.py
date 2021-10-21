@@ -16,7 +16,7 @@ def main():
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(acess_token, acess_token_secret)
     api = tweepy.API(auth)
-    schedule.every(30).minutes.do(retweet, api)
+    schedule.every(1).minutes.do(retweet, api)
 
     while True:
         schedule.run_pending()
