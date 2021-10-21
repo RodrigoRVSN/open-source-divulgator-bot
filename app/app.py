@@ -51,10 +51,10 @@ def add_retweet(mention):
     ret_mentions = get_retweeted_mentions()
     row = pd.Series(mention, index=['id'])
     ret_mentions = ret_mentions.append(row, ignore_index=True)
-    ret_mentions.to_csv('/retweeted_mentions/ret_mentions.csv', index=False)
+    ret_mentions.to_csv('open-source-divulgator-bot/retweeted_mentions/ret_mentions.csv', index=False)
 
 def get_retweeted_mentions():
-    ret_mentions = pd.read_csv('/retweeted_mentions/ret_mentions.csv')
+    ret_mentions = pd.read_csv('open-source-divulgator-bot/retweeted_mentions/ret_mentions.csv')
     return ret_mentions
 
 if __name__ == '__main__':
