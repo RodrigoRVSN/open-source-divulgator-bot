@@ -1,0 +1,93 @@
+* {
+    color: #F6F6F6;
+}
+
+body {
+    background-color: #212121;
+}
+
+a {
+    color: #D9CAB3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dbbd91;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #4f5c56;
+}
+
+footer {
+    margin-top: 21vh;
+    background-color: #4f5c56 !important;
+}
+
+i {
+    font-size: 40px;
+    color: #dbbd91;
+}
+
+#lincencaFooter {
+    color: #dbbd91;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#linkFooter {
+    color: #dbbd91;
+    text-decoration: underline;
+}
+
+#linkFooter:hover {
+    color: #a58658;
+    text-decoration: underline;
+}
+
+#footerLinkedIn, #footerTwitter, #footerInstagram, #footerGitHub {
+    margin: 5px;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    footer {
+        position: fixed;
+        bottom:0;
+        left:0;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    footer {
+        position: fixed;
+        bottom:0;
+        left:0;
+    }
+ } */
