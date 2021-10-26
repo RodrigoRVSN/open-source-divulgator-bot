@@ -15,18 +15,18 @@ main {
 a {
   color: #d9cab3;
   text-decoration: none;
-  transition: .5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 a:hover {
-    filter: brightness(0.8);
-    color: #dbbd91;
-    transform: scale(1.1);
+  filter: brightness(0.7);
+  color: #e9c46a;
+  transform: scale(1.1);
 }
 
 h3 {
   margin-bottom: 2rem;
-  font-size: 2.1rem
+  font-size: 2.1rem;
 }
 
 p {
@@ -35,22 +35,25 @@ p {
   line-height: 2;
 }
 
+b {
+  color: #e76f51;
+}
+
 nav {
-  background-color: #4f5c56;
+  background-color: #264653;
 }
 
 footer {
   margin-top: 21vh;
-  background-color: #4f5c56 !important;
+  background-color: #264653 !important;
 }
 
 i {
   font-size: 40px;
-  color: #dbbd91;
+  color: #ffffff;
 }
 
 #licenceFooter {
-  color: #dbbd91;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
@@ -59,7 +62,7 @@ i {
 }
 
 #linkFooter {
-  color: #dbbd91;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -76,17 +79,32 @@ i {
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 1.1rem;
+  font-weight: 700;
   margin: 0 2rem;
   color: rgba(0, 0, 0, 0.712);
-  transition: .5s ease-in;
+  transition: 0.3s ease-in;
 }
 
-
 .nav-link:hover {
-    filter: brightness(0.8);
-    color: #dbbd91;
-    transform: scale(1.1);
+  filter: brightness(0.8);
+  color: #e76f51 !important;
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  background: #212121;
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e76f51;
+}
+
+@media (max-width: 600px) {
+  #licenceFooter {
+    flex-direction: column;
+  }
 }
 
 /* // Extra small devices (portrait phones, less than 576px)
