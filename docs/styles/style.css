@@ -1,62 +1,92 @@
 * {
-    color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 body {
-    background-color: #212121;
+  background-color: #212121;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 5rem;
 }
 
 a {
-    color: #D9CAB3;
-    text-decoration: none;
+  color: #d9cab3;
+  text-decoration: none;
+  transition: .5s ease-in;
 }
 
 a:hover {
+    filter: brightness(0.8);
     color: #dbbd91;
-    text-decoration: none;
+    transform: scale(1.1);
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 2.1rem
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 2;
 }
 
 nav {
-    background-color: #4f5c56;
+  background-color: #4f5c56;
 }
 
 footer {
-    margin-top: 21vh;
-    background-color: #4f5c56 !important;
+  margin-top: 21vh;
+  background-color: #4f5c56 !important;
 }
 
 i {
-    font-size: 40px;
-    color: #dbbd91;
+  font-size: 40px;
+  color: #dbbd91;
 }
 
-#lincencaFooter {
-    color: #dbbd91;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.2);
+#licenceFooter {
+  color: #dbbd91;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #linkFooter {
-    color: #dbbd91;
-    text-decoration: underline;
+  color: #dbbd91;
+  text-decoration: underline;
 }
 
 #linkFooter:hover {
-    color: #a58658;
-    text-decoration: underline;
+  color: #a58658;
+  text-decoration: underline;
 }
 
-#footerLinkedIn, #footerTwitter, #footerInstagram, #footerGitHub {
-    margin: 5px;
+#footerLinkedIn,
+#footerTwitter,
+#footerInstagram,
+#footerGitHub {
+  margin: 5px;
 }
 
 .nav-link {
-    font-size: 18px;
-    color: rgba(0, 0, 0, 0.712);
+  font-size: 18px;
+  margin: 0 2rem;
+  color: rgba(0, 0, 0, 0.712);
+  transition: .5s ease-in;
+}
+
+
+.nav-link:hover {
+    filter: brightness(0.8);
+    color: #dbbd91;
+    transform: scale(1.1);
 }
 
 /* // Extra small devices (portrait phones, less than 576px)

@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
     <title>Open Source Share</title>
 </head>
 
@@ -17,27 +23,27 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark p-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Open Source Share</a>
+                <a class="navbar-brand" href="#about_project">Open Source Share</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#">O que é Open Source Share?</a>
-                        <a class="nav-link" href="#">Sobre o desenvolvedor</a>
-                        <a class="nav-link" href="#">Como contribuir para o projeto</a>
-                        <a class="nav-link" href="#">Contato</a>
-                    </div>
+                    <nav class="navbar-nav">
+                        <a class="nav-link" href="#about_project">O que é?</a>
+                        <a class="nav-link" href="#about_project">Sobre</a>
+                        <a class="nav-link" href="#contribute">Como contribuir</a>
+                        <a class="nav-link" href="#licenceFooter">Contato</a>
+                    </nav>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container">
+    <main class="container">
         <div id="openSourceShare">
-            <h3 class="text-center pt-5">O que é Open Source Share?</h3>
+            <h3 id="about_project" class="text-center pt-5">O que é <b>Open Source Share?</b></h3>
             <p>
                 O Open Source Share é um projeto que tem como objetivo a divulgação de projetos open source na
                 comunidade de desenvolvedores, principalmente no Twitter. Inspirado no @ViUmaVaga , o Open Source Share
@@ -45,17 +51,17 @@
                 mencionado. Em desenvolvimento, o projeto é open source, disponível no <a
                     href="https://github.com/Lorenzobattistela/open-source-divulgator-bot" target="_blank"
                     rel="noopener noreferrer">github</a>, buscando contribuições
-                para melhorias. Mais informações em <a href="">Como contribuir para o projeto?</a>
-                Obrigado por utilizar o Open Source Share!
+                para melhorias. Mais informações em <a href="#about_project"><b>"Como contribuir para o projeto?"</b></a>
+            . Obrigado por utilizar o Open Source Share!
             </p>
         </div>
         <div id="comoContribuir">
-            <h3 class="text-center pt-5">Como contribuir para o projeto?</h3>
+            <h3 class="text-center pt-5" id="contribute">Como <b>contribuir</b> para o projeto?</h3>
             <p>
-                A contribuição com o projeto pode acontecer através do github, fazendo Pull Requests ou Issues. Já em
+                A contribuição com o projeto pode acontecer através do github, fazendo <b>Pull Requests</b> ou <b>Issues</b>. Já em
                 outros ambientes, é possível contribuir através de sugestões na seção <a href="#">Contato</a> do site,
                 no twitter
-                através de DMs (na dm do criador) ou até tweets mencionando o desenvolvedor.
+                através de DMs (na DM do criador) ou até tweets mencionando o desenvolvedor.
             </p>
             <p>
                 Para contribuir no github, dê um Fork no projeto, clone na sua máquina local, instale as dependências
@@ -70,8 +76,8 @@
                     rel="noopener noreferrer">Projeto</a>.
             </p>
         </div>
-        <div id="sobreDesenvolvedor">
-            <h3 class="text-center pt-5">Sobre o desenvolvedor</h3>
+        <div id="aboutDeveloper">
+            <h3 id="about_developer" class="text-center pt-5">Sobre o desenvolvedor</h3>
             <p>
                 Lorenzo Battistela é um desenvolvedor estudante de programação de 16 anos, atualmente no Ensino Médio.
                 Programando há 1 ano e meio, a ideia do projeto veio com a dificuldade de encontrar projetos open source
@@ -79,12 +85,14 @@
                 desenvolvedores presente no twitter, a ideia se traduziu no Open Source Share!
             </p>
         </div>
-    </div>
+    </main>
     <footer>
-        <div class="text-center p-3" id="lincencaFooter">
-            Licença disponínel em
-            <a id="linkFooter"
+        <div class="text-center p-3" id="licenceFooter">
+            <p>
+                Licença disponínel em
+                <a id="linkFooter"
                 href="https://github.com/Lorenzobattistela/open-source-divulgator-bot/blob/master/LICENSE">GitHub</a>
+            </p>
             <div id="links">
                 <a id="footerTwitter" href="https://twitter.com/Lorenzoowb" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></i>
                 <a id="footerInstagram" href="https://www.instagram.com/lorenzo_wb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
